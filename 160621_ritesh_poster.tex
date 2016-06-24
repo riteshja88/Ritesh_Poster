@@ -1,6 +1,6 @@
 %%-----------------------------------------------------------------
 %%	Poster Template
-%%	Updated 16/06/22
+%%	Updated 16/06/24
 %%	For Ritesh Agarwal
 %%-----------------------------------------------------------------
 
@@ -57,6 +57,7 @@
 %%	Custom Body Font
 \setlength{\parindent}{0pt}%			no first line indents
 \setmainfont{HelveticaNeue Medium}%		default body font
+	[BoldFont = HelveticaNeue Bold]
 %	default font color
 \makeatletter
 \newcommand{\globalcolor}[1]{%
@@ -78,15 +79,10 @@
 %%	Background & Page Header
 \SetBgContents{%
 \begin{tikzpicture}[remember picture,overlay]%
-	\node at (current page.north west)% 	at top left corner
-		{\begin{tikzpicture}[remember picture,overlay]%
-			%	page background	
-			\draw[anchor=north west] (0,0) node [%
-				fill=background,%
-				opacity=1,%
-				inner sep=10in]%
-				{\strut\makebox[8.3in]{}};%
-		\end{tikzpicture}};%
+	\node[below right] at ($(current page.north west)+(2.5,-2.5)$)%
+		{\includegraphics[height=11.69in]{160621_background}};%
+	\node[below] at ($(current page.north)+(2.75,-3)$)%
+		{\includegraphics[width=4.1cm]{160621_header_image}};%
 	\node[below right] at ($(current page.north west)+(2.5,-2.5)$)%
 		{\includegraphics[width=8.27in]{160621_header_plain}};%
 \end{tikzpicture}%
@@ -146,11 +142,11 @@ PUNE INSTITUTE OF COMPUTER TECHNOLOGY, 2010\\
 \begin{tabularx}{\linewidth}{X}
 \large CAREER	\\\toprule
 \redfont{SOFTWARE ENGINEER, CISCO SYSTEMS}\newline
-SAN JOSE, CALIFORNIA, USA, 2015 - Present	\\
+SAN JOSE, CALIFORNIA, US, 2015 - Present	\\
 \redfont{SUMMER INTERN, YAHOO INC}\newline
-SUNNYVALE, CALIFORNIA, USA, SUMMER INTERNSHIP DURING MASTERS	\\
+SUNNYVALE, CALIFORNIA, US, SUMMER INTERNSHIP DURING MASTERS	\\
 \redfont{GRADUATE RESEARCH ASSISTANT, UNIVERSITY OF ILLINOIS, CHICAGO}\newline
-CHICAGO, ILLINOIS, USA, PART-TIME JOB DURING MASTERS \\
+CHICAGO, ILLINOIS, US, PART-TIME JOB DURING MASTERS \\
 \redfont{SOFTWARE ENGINEER, CISCO SYSTEMS}\newline
 PUNE, MAHARASHTRA, INDIA, 2010-2012	\\
 \end{tabularx}
@@ -179,16 +175,16 @@ B.Sc Computer Science\newline
 Formerly working as a SOFTWARE ENGINEER in Pune\newline
 Blessed with a 3 year old baby girl(Navya)\\
 YOUNGER SISTER	& \redfont{POONAM GUPTA} &%
-CITY	& \redfont{PHILADELPHIA}\newline PENNSYLVANIA, USA	&%
+CITY	& \redfont{PHILADELPHIA}\newline PENNSYLVANIA, US	&%
 SERVICE	& \redfont{JUST MARRIED}\newline
 B.E Electronics and Telecommunication from VIIT, Pune\newline
 Formerly working as a SOFTWARE ENGINEER in Pune	\\
 BROTHER IN LAW	& \redfont{MANAN GUPTA}	&%
-CITY	& \redfont{PHILADELPHIA}\newline PENNSYLVANIA, USA	&%
+CITY	& \redfont{PHILADELPHIA}\newline PENNSYLVANIA, US	&%
 SERVICE	& \redfont{SAP}\newline
 SOFTWARE ENGINEER AT SAP	\newline
 B.E , P.G.D MBA from Mumbai University\\
-\end{tabularx}
+\end{tabularx}\\
 
 \bigskip
 \begin{tabularx}{\linewidth}%
