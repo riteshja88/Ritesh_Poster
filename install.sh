@@ -5,6 +5,7 @@ port install xelatex
 sudo tlmgr update --self
 sudo tlmgr install background
 sudo tlmgr install everypage
+sudo tlmgr install latexmk
 cd /Users/ritesh/Desktop/RiteshShaadiBioData/Ritesh_Poster
 unzip helveticaneue.zip 
 unzip Fjalla_One.zip    
